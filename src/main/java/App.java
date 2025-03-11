@@ -18,8 +18,8 @@ public class App {
         Cat cat2 = applicationContext.getBean("cat", Cat.class);
         System.out.println(cat2.getName());
 
-        System.out.println("bean equals bean2? - " + (bean == bean2));
-        System.out.println("cat1 equals cat2? - " + (cat1 == cat2));
+        System.out.println("bean reference = bean2 reference? - " + (bean == bean2));
+        System.out.println("cat1 reference = cat2 reference? - " + (cat1 == cat2));
 
         ((ConfigurableApplicationContext) applicationContext).close();
     }
